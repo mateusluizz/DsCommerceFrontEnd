@@ -36,8 +36,8 @@ function ProductDetails() {
         <section id="product-details-section" className="dsc-container">
           <ProductDetailsCard product={product}></ProductDetailsCard>
           <div className="dsc-btn-page-container">
-            <ButtonPrimmary></ButtonPrimmary>
-            <ButtonInverse></ButtonInverse>
+            <ButtonPrimmary name="Comprar"></ButtonPrimmary>
+            <ButtonInverse name="Início"></ButtonInverse>
           </div>
         </section>
       </main>

@@ -1,7 +1,11 @@
-import "./styles.css";
+import './styles.css';
 
-function ButtonPrimmary() {
-  return <div className="dsc-btn dsc-btn-blue">Comprar</div>;
+type Props = {
+  name: string;
+};
+
+function ButtonPrimmary({ name }: Props) {
+  return <div className="dsc-btn dsc-btn-blue">{name}</div>;
 }
 
 export default ButtonPrimmary;

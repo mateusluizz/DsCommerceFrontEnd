@@ -1,9 +1,11 @@
-import './styles.css'
+import './styles.css';
 
-function ButtonNextPage() {
-  return (
-    <div className="dsc-btn-next-page">Carregar mais</div>
-  )
+type Props = {
+  name: string;
+};
+
+function ButtonNextPage({ name }: Props) {
+  return <div className="dsc-btn-next-page">{name}</div>;
 }
 
-export default ButtonNextPage
+export default ButtonNextPage;
