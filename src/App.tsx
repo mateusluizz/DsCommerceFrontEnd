@@ -1,5 +1,5 @@
-import Catalog from "./routes/Catalog";
-import ProductDetails from "./routes/ProductDetails";
+import Catalog from './routes/Catalog';
+import ProductDetails from './routes/ProductDetails';
 
 function App() {
   return (
