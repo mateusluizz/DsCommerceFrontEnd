@@ -1,9 +1,8 @@
-import './styles.css';
-import HeaderClient from '../../components/HeaderClient';
-import SerachBar from '../../components/SearchBar';
-import CatalogCard from '../../components/CatalogCard';
-import ButtonNextPage from '../../components/ButtonNextPage';
-import { ProductDTO } from '../../models/product';
+import './styles.css'
+import SerachBar from '../../../components/SearchBar'
+import CatalogCard from '../../../components/CatalogCard'
+import ButtonNextPage from '../../../components/ButtonNextPage'
+import { ProductDTO } from '../../../models/product'
 
 const product: ProductDTO = {
   id: 2,
@@ -26,12 +25,11 @@ const product: ProductDTO = {
       name: 'Importados',
     },
   ],
-};
+}
 
 function Catalog() {
   return (
-    <>
-      <HeaderClient></HeaderClient>
+    <main>
       <section id="catalog-section" className="dsc-container">
         <SerachBar></SerachBar>
 
@@ -48,8 +46,8 @@ function Catalog() {
 
         <ButtonNextPage name="Carregar Mais"></ButtonNextPage>
       </section>
-    </>
-  );
+    </main>
+  )
 }
 
-export default Catalog;
+export default Catalog
