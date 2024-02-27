@@ -2,14 +2,22 @@ import './styles.css'
 import ProductDetailsCard from '../../../components/ProductDetailsCard'
 import ButtonPrimmary from '../../../components/ButtonPrimmary'
 import ButtonInverse from '../../../components/ButtonInverse'
-import * as ProductService from '../../../services/produtc-service'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { ProductDTO } from '../../../models/product'
+import * as productService from '../../../services/produtc-service'
 
 function ProductDetails() {
   const params = useParams()
+  const [product, setProduct] = useState<ProductDTO>()
 
-  const product = ProductService.findById(Number(params.productId))
+  useEffect(() => {
+    productService.findById(Number(params.productId)).then(({ data }) => {
+      console.log(data)
+      setProduct(data)
+    })
+  }, [])
 
   return (
     <main>
