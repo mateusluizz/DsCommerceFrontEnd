@@ -10,8 +10,7 @@ function Catalog() {
   const [products, setproducts] = useState<ProductDTO[]>([])
 
   useEffect(() => {
-    productService.findAll()
-      .then(({ data }) => {
+    productService.findAll().then(({ data }) => {
       setproducts(data.content)
     })
   }, [])
