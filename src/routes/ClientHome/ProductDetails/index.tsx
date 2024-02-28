@@ -6,7 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { ProductDTO } from '../../../models/product'
-import * as productService from '../../../services/produtc-service'
+import * as productService from '../../../services/product-service'
 
 function ProductDetails() {
   const params = useParams()

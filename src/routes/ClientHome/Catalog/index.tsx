@@ -4,7 +4,7 @@ import CatalogCard from '../../../components/CatalogCard'
 import ButtonNextPage from '../../../components/ButtonNextPage'
 import { ProductDTO } from '../../../models/product'
 import { useEffect, useState } from 'react'
-import * as productService from '../../../services/produtc-service'
+import * as productService from '../../../services/product-service'
 
 function Catalog() {
   const [products, setproducts] = useState<ProductDTO[]>([])
