@@ -18,3 +18,7 @@ export const get = (): OrderDTO => {
   })
   return cart
 }
+
+export const clear = () => {
+  localStorage.setItem(CART_KEY, '{"items":[]}')
+}

@@ -25,3 +25,7 @@ export const addProduct = (product: ProductDTO) => {
     cartRepository.save(cart)
   }
 }
+
+export const clearCart = () =>{
+  cartRepository.clear()
+}
